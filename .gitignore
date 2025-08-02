@@ -1,0 +1,40 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+gen/
+
+# Maven
+target/
+dependency-reduced-pom.xml
+release.properties
+dependency/
+buildNumber.properties
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Others
+logs/
+*.db
+*.h2.db
+node_modules/
+
+# Spring Boot
+spring-boot-loader/
+BOOT-INF/
+META-INF/
+
+# VS Code
+.vscode/

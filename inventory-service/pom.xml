@@ -35,6 +35,13 @@
             <version>8.0.33</version>
 <!--            <scope>runtime</scope>-->
         </dependency>
+        <!-- Postgree driver       -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.3</version> <!-- or latest stable -->
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -73,6 +80,11 @@
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-tracing</artifactId>
         </dependency>
+        <!-- Context propagation -->
+<!--        <dependency>-->
+<!--            <groupId>io.micrometer</groupId>-->
+<!--            <artifactId>context-propagation</artifactId>-->
+<!--        </dependency>-->
 
     </dependencies>
 </project>

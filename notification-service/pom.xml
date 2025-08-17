@@ -60,6 +60,13 @@
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-tracing</artifactId>
         </dependency>
+
+        <!-- Context propagation -->
+<!--        <dependency>-->
+<!--            <groupId>io.micrometer</groupId>-->
+<!--            <artifactId>context-propagation</artifactId>-->
+<!--        </dependency>-->
+
         <!-- Spring Kafka        -->
         <dependency>
             <groupId>org.springframework.kafka</groupId>

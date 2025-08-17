@@ -38,6 +38,7 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>1.18.30</version>
+<!--                <scope>provided</scope> &lt;!&ndash; Recommended &ndash;&gt;-->
             </dependency>
 <!--            Test Containesrs-->
             <dependency>
@@ -89,6 +90,31 @@
                     <target>21</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>3.4.0</version>
+                <configuration>
+                    <from>
+
+                            <image>eclipse-temurin:21-jre</image>
+                            <!-- No auth here for public base image -->
+                            <auth>
+                                <username></username>
+                                <password></password>
+                            </auth>
+                        </from>
+
+                    <to>
+                        <image>registry.hub.docker.com/ashu7102/${artifactId}</image>
+                        <auth>
+                            <username>ashu7102</username>
+                            <password>${env.DOCKER_HUB_PASSWORD}</password>
+                        </auth>
+                    </to>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 </project>

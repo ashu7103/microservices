@@ -38,6 +38,12 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.33</version>
         </dependency>
+        <!-- Postgree driver       -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.3</version> <!-- or latest stable -->
+        </dependency>
     <!--  Rsilance4,accutator for circuit breaker   -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -80,6 +86,11 @@
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-tracing</artifactId>
         </dependency>
+        <!-- Context propagation -->
+<!--        <dependency>-->
+<!--            <groupId>io.micrometer</groupId>-->
+<!--            <artifactId>context-propagation</artifactId>-->
+<!--        </dependency>-->
         <!-- Spring Kafka        -->
         <dependency>
             <groupId>org.springframework.kafka</groupId>

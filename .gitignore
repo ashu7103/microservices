@@ -38,3 +38,6 @@ META-INF/
 
 # VS Code
 .vscode/
+
+mongo-data/
+mysql_keycloak_data/
